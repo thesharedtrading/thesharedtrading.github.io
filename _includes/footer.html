@@ -1,0 +1,80 @@
+<footer class="bg-dark text-white">
+  <div class="container-lg p-4">
+    <section class="mb-4 text-center">
+      {%- if site.facebook_username -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/{{ site.facebook_username }}" target="_blank" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      {%- endif -%}
+      {%- if site.twitter_username -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+      {%- endif -%}
+      {%- if site.instagram_username -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="https://instagram.com/{{ site.instagram_username }}" target="_blank" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      {%- endif -%}
+      {%- if site.linkedin_username -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      {%- endif -%}
+      {%- if site.github_username -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/{{ site.github_username }}" target="_blank" role="button">
+        <i class="fab fa-github"></i>
+      </a>
+      {%- endif -%}
+      <a class="btn btn-outline-light btn-floating m-1" href="{{ 'feed.xml' | relative_url }}" target="_blank" role="button">
+        <i class="fas fa-rss"></i>
+      </a>
+    </section>
+
+    <section class="mb-4 text-center">
+      {%- include mailchimp.html -%}
+    </section>
+
+    <!-- <section class="mb-4 text-center">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="mb-4 text-start">
+      <p class="font-weight-bold"><b>Declaración de Riesgo:</b></p>
+      <p>
+        La operación de futuros y forex sobrelleva riesgos substanciales y no es para todos los inversionistas. Un inversionista, podría, potencialmente perder todo o más de la inversión inicial. Capital de Riesgo, es dinero que puede ser perdido, sin poner en juego la seguridad financiera o estilo de vida de la persona. Solo capital de riesgo debe ser utilizado para trading, y solo aquellas personas con suficiente capital de riesgo deben considerar trading. Resultados pasados, no son necesariamente indicativos de resultados futuros.
+      </p>
+      <p class="font-weight-bold"><b>Declaración de Resultados Hipotéticos:</b></p>
+      <p>
+        Resultados hipotéticos de rendimiento deben tener muchas limitaciones inherentes, algunas de las cuales se describen a continuación. No se debe hacer representación de que alguna de las cuentas va o es probable que tenga resultados similares a los mostrados; de hecho, hay diferencias frecuentes entre los resultados hipotéticos y los resultados actuales obtenidos por cualquier programa de trading. Una de las limitaciones de resultados hipotéticos de rendimiento es el hecho de que son preparados con los beneficios en retrospectiva. Además, trading hipotético no involucra riesgo financiero, y ningún record de trading hipotético puede considerar el riesgo financiero de operaciones reales. Por ejemplo, la capacidad de resistir pérdidas o de adherirse a un programa de trading particular sin importar pérdidas son puntos materiales los cuales pueden afectar de manera substancial resultados de trading real. Hay muchos factores relacionados a los mercados en general, o a la implementación de cualquier programa de trading especifico, los cuales no pueden ser todos considerados en la preparación de resultados hipotéticos, todos estos, pueden afectar los resultados de trading de forma adversa.
+      </p>
+    </section>
+
+    <section class="mb-4 text-center">
+      <a class="text-white text-decoration-none" href="{{ "/privacy/" | relative_url }}">POLÍTICA DE PRIVACIDAD</a>
+    </section>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright © 2021 <a class="text-white text-decoration-none" href="{{ "/" | relative_url }}">Shared Trading</a> - Todos los derechos reservados.
+  </div>
+</footer>

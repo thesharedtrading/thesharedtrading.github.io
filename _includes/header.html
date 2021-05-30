@@ -1,0 +1,49 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="opacity: 0.95;">
+    <div class="container-lg">
+      {%- if page.url == "/" -%}
+      <a class="navbar-brand" href="#">
+        <b>
+          {{ site.title | escape }}
+        </b>
+      </a>
+      {%- else -%}
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">
+        <b>
+          {{ site.title | escape }}
+        </b>
+      </a>
+      {%- endif -%}
+
+      {%- if page_paths -%}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {%- for path in page_paths -%}
+        {%- assign p = site.pages | where: "path", path | first -%}
+        {%- if p.title -%}
+          <li class="nav-item">
+            {%- if page.url == p.url -%}
+            <a class="nav-link active" aria-current="page" href="{{ p.url | relative_url }}">
+              {{ p.title | escape | upcase }}
+            </a>
+            {%- else -%}
+            <a class="nav-link" href="{{ p.url | relative_url }}">
+              {{ p.title | escape | upcase }}
+            </a>
+            {%- endif -%}
+          </li>
+        {%- endif -%}
+        {%- endfor -%}
+        </ul>
+      </div>
+      {%- endif -%}
+
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<style>
+  .jumbotron {
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('{{ "/assets/img/background.jpg" | relative_url }}');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .jumbotron-content {
+    padding-top: 200px;
+  }
+  .division {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 30px;
+  }
+</style>
+
+<!-- Jumbotron -->
+<div class="container-fluid p-0 jumbotron">
+  <div class="jumbotron-content text-center">
+      <h1 class="text-white mt-5 mb-4">¡Bienvenido a {{ site.title }}!</h1>
+      <h5 class="text-white mb-5 text-uppercase">Encantados de conocerte</h5>
+      <a class="btn btn-success fs-5" href="#portfolio" role="button">Descubre más</a>
+  </div>
+</div>
+
+<div class="container-lg bg-light">
+  {{ content }}
+</div>
+
+<!-- Services-->
+<section class="bg-white mb-5" id="services">
+  <div style="height: 60px"></div>
+  <div class="container-lg">
+    <div class="text-center pt-3 mb-4">
+        <h2 class="text-uppercase mb-3">Nuestra propuesta</h2>
+        <h4 class="text-muted">Buscamos facilitar tus operaciones</h4>
+    </div>
+    <hr class="division"/>
+    <div class="row text-center">
+        <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+                <i class="fas fa-chart-line"></i>
+            </span>
+            <h3>Mejora tu operación</h3>
+            <p class="fs-4 text-muted">Desde Shared Trading buscamos facilitar las operaciones de trading creando herramientas compatibles para distintas plataformas.</p>
+        </div>
+        <div class="col-md-6">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-universal-access"></i>
+            </span>
+            <h3>A medida</h3>
+            <p class="fs-4 text-muted">Si tienes algun requerimiento específico, cuéntanoslo y desarrollamos las funcionalidades que mejor se adapten a tu tipo de operación.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section class="bg-light mb-5" id="portfolio">
+  <div style="height: 60px"></div>
+  <div class="container-lg">
+    <div class="text-center pt-3 mb-4">
+        <h2 class="text-uppercase mb-3">Productos</h2>
+        <h4 class="text-muted">Creamos indicadores y herramientas para operar en diferentes plataformas</h4>
+    </div>
+    <hr class="division"/>
+    <div class="row">
+      <!-- Portfolio item 1-->
+      <div class="col-lg-4 col-sm-6 mb-4">
+          <img class="img-fluid rounded img-thumbnail mb-3" src="{{ "/assets/img/portfolio/1.jpg" | relative_url }}" alt="..." />
+          <div class="text-center">
+              <div class="fs-3 mb-3">Duplicador Local de Operaciones</div>
+              <div class="fs-4 mb-3 text-muted">Este indicador te permite duplicar las operaciones entre diferentes cuentas de forma automática, para que puedas maximizar tu tiempo de operación.</div>
+              <div class="fs-5 mb-3 text-muted"><i>Plataformas: NinjaTrader8</i></div>
+              <a class="btn btn-primary mb-3 fs-5" href="#contact" role="button">Solicitar ya</a>
+          </div>
+      </div>
+      <!-- Portfolio item 2-->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded img-thumbnail mb-3" src="{{ "/assets/img/portfolio/2.jpg" | relative_url }}" alt="..." />
+        <div class="text-center">
+            <div class="fs-3 mb-3">Duplicador Remoto de Operaciones</div>
+            <div class="fs-4 mb-3 text-muted">Este indicador te permite duplicar las operaciones entre diferentes cuentas de forma automática, remota, y entre diferentes plataformas. Multiplica tus posibilidades de operación.</div>
+            <div class="fs-5 mb-3 text-muted"><i>Plataformas: NinjaTrader8, NinjaTrader7</i></div>
+            <a class="btn btn-primary mb-3 fs-5" href="#contact" role="button">Solicitar ya</a>
+        </div>
+      </div>
+      <!-- Portfolio item 3-->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded img-thumbnail mb-3" src="{{ "/assets/img/portfolio/3.jpg" | relative_url }}" alt="..." />
+        <div class="text-center">
+            <div class="fs-3 mb-3">Riesgo y Recompensa</div>
+            <div class="fs-4 mb-3 text-muted">Esta herramienta de dibujo te permite calcular diferentes niveles de riesgo y recompensa en tus instrumentos de forma rápida y efectiva.</div>
+            <div class="fs-5 mb-3 text-muted"><i>Plataformas: NinjaTrader8</i></div>
+            <a class="btn btn-primary mb-3 fs-5" href="#contact" role="button">Solicitar ya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="bg-white mb-5" id="contact">
+  <div style="height: 60px"></div>
+  <div class="text-center pt-3 mb-4">
+      <h2 class="text-uppercase mb-3">Contácte ahora</h2>
+      <h4 class="text-muted">Estamos a su disposición en cualquier momento</h4>
+  </div>
+  <hr class="division"/>
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-sm-8 order-1 order-sm-0">
+          <iframe class="mt-4 mb-5 img-fluid img-thumbnail" style="width: 100%; height:500px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50729.73986888891!2d-5.990163434225983!3d37.37543377042349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be6291%3A0x34f018621cfe5648!2sSevilla!5e0!3m2!1ses!2ses!4v1622395712313!5m2!1ses!2ses"></iframe>
+      </div>
+      <div class="col-sm-4">
+          <hr class="mt-4 mb-4 d-none d-sm-block"/>
+          <p class="mt-4 fw-bold">Contáctenos y responderemos en menos de 24h</p>
+          <p class="mt-2"><i class="fas fa-map-marker-alt"></i> Sevilla, España</p>
+          <p class="mt-2"><i class="fas fa-envelope"></i> <a class="text-dark text-decoration-none" href="mailto:contact@thesharedtrading">contact@thesharedtrading</a></p>
+          <hr class="mt-4 mb-4"/>
+          <p class="mt-4 fw-bold">Otros correos de contacto</p>
+          <p class="mt-2 fw-bold text-muted">Soporte técnico</p>
+          <p class="mt-2"><i class="fas fa-envelope"></i> <a class="text-dark text-decoration-none" href="mailto:support@thesharedtrading">support@thesharedtrading</a></p>
+          <p class="mt-2 fw-bold text-muted">Licencias</p>
+          <p class="mt-2"><i class="fas fa-envelope"></i> <a class="text-dark text-decoration-none" href="mailto:licensing@thesharedtrading">licensing@thesharedtrading</a></p>
+          <hr class="mt-4 mb-4"/>
+      </div>
+    </div>
+  </div>
+</section>

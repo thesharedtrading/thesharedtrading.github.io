@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" style="height: 100%">
+  {%- include head.html -%}
+  <body style="height: 100%">
+    {%- include header.html -%}
+    {{ content }}
+    {%- include footer.html -%}
+    {%- include scripts.html -%}
+  </body>
+</html>
