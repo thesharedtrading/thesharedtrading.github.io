@@ -14,8 +14,8 @@ baseurl: "" # the subpath
 url: "https://thesharedtrading.com" # the base hostname & protocol
 
 # Social Profiles
-twitter_username:   SharedTradingES
-github_username:    thesharedtrading
+twitter_username:   
+github_username:    
 facebook_username:  
 instagram_username: 
 linkedin_username:  
